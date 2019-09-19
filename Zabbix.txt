@@ -1,0 +1,55 @@
+zabbix
+
+zabbix-agentを導入（Windows版をインストール）
+動作確認済。データ取得まで確認。
+
+・Zabbix ServerをLinuxに入れてみる
+　ec2インスタンス作成→完了
+　puttyも入れる→接続確認済
+　MySQL5.5入れた
+　https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/putty.html?icmpid=docs_ec2_console　
+　https://qiita.com/2no553/items/952dbb8df9a228195189
+
+下記参考に入れる
+　https://qiita.com/s-katsumata/items/d08cafe98c223ca40c2b
+　https://www.zabbix.com/jp/download?zabbix=4.2&os_distribution=centos&os_version=7&db=mysql
+
+
+Zabbixインストール時にエラーになる
+systemdが起動してない？
+OSが適切じゃないか
+---------------------------------
+Error: Package: zabbix-server-mysql-4.2.6-1.el7.x86_64 (zabbix)
+           Requires: systemd
+～
+---------------------------------
+
+OS変えて入れてみるか
+　→無料利用枠のAmazon Linux 2 AMI (HVM), SSD Volume Type - ami-0ff21806645c5e492 (64 ビット x86) / ami-024b748b625ec022a (64 ビット Arm)を作成
+　→MySQL5.7インストール
+
+
+l;Grhgdry5f/
+MySQLパスワード変更
+↓
+Zabbix_test2
+
+
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' 
+/etc/my.cnfのcharacter_set_serverを追記したらsocketが読めなくなり、mysqlログインができなくなったので設定を戻した
+
+zabbixインストール
+systemctl start zabbix-server zabbix-agent httpdで起動
+
+下記でWEB管理画面のアクセスを試みたが接続できず
+
+http://172.31.41.231/zabbix
+http://18.179.112.36/zabbix
+ec2-18-179-112-36.ap-northeast-1.compute.amazonaws.com
+
+zabbix-serverが10051ポートでなぜかListenできない
+↓
+zabbix-serverインストールまで完了したため一旦完了とする
+
+余裕があればZabbix管理画面の操作まで実行してみる
+https://doruby.jp/users/nakamatsu/entries/CentOS6%E7%92%B0%E5%A2%83%E3%81%ABZabbix%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F
