@@ -1,0 +1,92 @@
+■09/02(月)
+・経歴書を再送したことを高見さんに伝えた
+・入室用セキュリティーカード確認依頼
+　→ゲストカード借用。IC入りの新しいカードが家にないか探す。ない場合は再発行依頼。
+・傷病手当申請を再依頼（医師の個人印鑑が押印の必要がある）
+・電源タップ借りた
+・空き時間は自習。
+　→LPIC資格取得に向けて自習。Linux環境作成（ubuntu）。user:yuzawa pass:yuzawa
+    参考サイト：https://www.infraeye.com/study/studyz4.html
+　　　　　　　：https://ping-t.com/mondai3/mondais/mbunya
+
+■09/03(火)
+・通院のため終日休み
+
+■09/04(水)
+・傷病手当金申請書7月分提出済。8月分、診断書は来週提出予定の旨伝える。
+・社員証は自宅に無いため、土屋さんが持っていないか確認中。
+　→土屋さん持っていない。葛葉さんが知らないか確認中。
+・高見さんが田町の案件を提案中。田町は三田から徒歩で行けるため問題なし
+　→WindowsClusterServiceを使用する可能性あり。調べておく。
+　　参考サイト：https://techinfoofmicrosofttech.osscons.jp/index.php?MSCS%2FWSFC#n52139d2
+　　　　　　　　https://www.atmarkit.co.jp/ait/articles/0812/03/news138.html
+
+■09/05(木)
+・WindowsClusterServiceについて調査したことをまとめる
+　→下記資料に概要はまとめた。
+　　C:\Users\A015\Desktop\個人用\自習\インフラ関連\業務¥WindowsClusterServiceについて
+・Powershell（Windows標準機能のCLI）を学習。タスクスケジュールのバックアップスクリプトを作成してみた
+　→参考サイト：https://tonari-it.com/windows-powershell-filebackup/
+・気になるサービス：Azure、Docker、BigQuery
+
+■09/06(金)
+・気になるサービス関連を調査してまとめる
+・業務終了後に歯医者に書類受け取りに行くため、18:00前に退社する
+・提案中の案件の面談は来週以降になる予定
+・西条さんよりAWS案件の提案をしていただく予定
+　→構築ではなくAWSを使用していた旨伝える
+
+■09/09(月)
+・台風影響による電車遅延のため午後出社（高見さん報告済）
+　→遅延証明
+　　http://syoumeisyo.tokyu.co.jp/lines/delay?line_name=meguro&direction=up&occurrence_date=2019/9/9&time_zone=second_half
+・Zabbix入れてみる続き
+　→zabbix-serverまでインストール完了
+・傷病手当申請書、診断書提出
+　→まだ必要事項埋めてないので本日中に記入して明日提出
+・AWS案件を提案する予定のため、復習を兼ねてAWS関連を学習しておく
+　→ec2インスタンスの作成は完了
+　　RDS、ElastiCache、Redisの構築もやってみる
+
+■09/10(火)
+・傷病手当申請書、診断書提出]
+　→大下さんに提出済
+・RDS
+　　→RDS作成→ec2から接続まで
+　　　参考：https://qiita.com/na0AaooQ/items/7c69a88c80f1efb4cad3
+・高見さんよりLAC案件提案中。親はTIS。勤務地：西新宿。中田さんは参画予定。一緒に入れるか1、2日待ち。
+　人数が多く（200人程度）、不足しているスキルはメンバー間相互で補う方針のため、高スキルは要求されていないとのこと。
+
+■09/11(水)
+・腹痛が継続しているため病院にて検査
+　→終日休み
+
+■09/12(木)
+・RDSでmysql設定等
+・ec2でapache、php起動
+　参考：https://qiita.com/Arashi/items/629aaed33401b8f2265c
+・redis構築
+
+■09/13(金)
+・ec2インスタンスを作成し、linux環境構築
+　→LPIC学習環境を作成。
+　　無料の問題集サイトで学習。
+・LACの案件のレスポンスが悪いため、高見さんより催促する予定。
+　→週明けに進捗状況を確認。
+
+■09/17(火)
+・高見さんにLAC案件の進捗状況を確認する。
+　→09/17定時後頃に返答がある予定。
+・特に進捗がなければ不足しているインフラスキル（php、python、Docker）の勉強
+
+■09/18(水)
+・高見さんにLAC案件の進捗状況を確認する。
+・特に進捗がなければ不足しているインフラスキル（ansible）の勉強
+
+■09/19(木)
+・西条さんよりSB案件は二か月先まで進展がないとの共有あり。
+・特に進捗がなければ不足しているインフラスキル（git、jenkins）の勉強
+・Zabbixの操作やってみる
+
+■09/20(金)
+・Zabbixをec2にインストールする
