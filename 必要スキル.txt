@@ -1,4 +1,4 @@
-﻿インフラエンジニアとして不足している知識
+インフラエンジニアとして不足している知識
 
 ■構築業務に必要なスキル
 　参考：https://hatebu.me/entry/2017/06/19/222343
@@ -26,6 +26,7 @@
 　→zabbix-serverまでインストール完了。
 　　余裕があれば管理画面で操作するところまで実行する。
 　　mackerelは無料枠があるためアカウントを作成する。
+　　参考：https://www.designet.co.jp/ossinfo/selection/monitoring-server.html
 
 
 ・構成管理ツール
@@ -38,7 +39,6 @@
 　　→アカウント作成。リモートにtestリポジトリ作成。
 　　　ローカルデータの反映を確認。リモートで変更、ローカルに反映まで完了。
 　　　・WinSCP入れて自習用メモをgithubに上げた。WinSCPの設定は簡単で勝手にppkファイルを読み込んでくれた
-   　　新たにファイルをリモートにアップロードする場合は、その都度新規リポジトリが必要そう
 　　　参考：https://techacademy.jp/magazine/6235
 　　　　　　https://qiita.com/nnahito/items/565f8755e70c51532459
 
@@ -74,5 +74,3 @@
 
 ・Docker
 　：AWSのECSを作成
-
-
