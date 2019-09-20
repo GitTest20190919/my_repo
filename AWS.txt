@@ -1,84 +1,83 @@
 AWS
 
-�A�J�E���g�͌l�̃��[���A�h���X�ō쐬
+アカウントは個人のメールアドレスで作成
 crystal0@tj9.so-net.ne.jp
 Crystal0tj9
 
-���}�l�W�����g�R���\�[��
+■マネジメントコンソール
 https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fap-northeast-1.console.aws.amazon.com%2Fconsole%2Fhome%3Fregion%3Dap-northeast-1%26state%3DhashArgs%2523%26isauthcode%3Dtrue&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fhomepage&forceMobileApp=0
 
-putty����ڑ�
+puttyから接続
 https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/putty.html?icmpid=docs_ec2_console
 
-�EAWS�Č����Ă���\��̂��߁A���K�����˂�AWS�֘A���w�K���Ă���
-�@��ec2�C���X�^���X�̍쐬�͊���
-�@�@RDS�AElastiCache�ARedis�̍\�z������Ă݂�
+・AWS案件を提案する予定のため、復習を兼ねてAWS関連を学習しておく
+　→ec2インスタンスの作成は完了
+　　RDS、ElastiCache、Redisの構築もやってみる
 
-�Eec2�C���X�^���X�͍쐬�ρi�ڑ��m�F�͎���PC����͖��Ȃ��j
-�@���ۋ�����Ȃ��悤terminated��
-�@��MySQL�C���X�g�[��
-�@�@�Q�l�Fhttps://qiita.com/2no553/items/952dbb8df9a228195189
+・ec2インスタンスは作成済（接続確認は自分PCからは問題なし）
+　→課金されないようterminated済
+　→MySQLインストール
+　　参考：https://qiita.com/2no553/items/952dbb8df9a228195189
 
-�@��ec2��stop��start��ŉ��z�T�[�o�z�X�g���ړ�����IP�A�h���X���ς��̂Œ��ӁI
+　★ec2はstop→start後で仮想サーバホストが移動してIPアドレスが変わるので注意！
 
-�ERDS�쐬��ec2����ڑ��܂�
-�@�@�@�Q�l�Fhttps://qiita.com/na0AaooQ/items/7c69a88c80f1efb4cad3
+・RDS作成→ec2から接続まで
+　　　参考：https://qiita.com/na0AaooQ/items/7c69a88c80f1efb4cad3
 
-RDS�쐬�܂Ŋ���
-���ݑ��ec2����mysql�ڑ����ł����A�Z�L�����e�B�O���[�v�ݒ�ł͂܂�
-�쐬�菇�����������
+RDS作成まで完了
+踏み台のec2からmysql接続ができず、セキュリティグループ設定ではまる
+作成手順を誤ったかも
 
-���L�菇�ōč쐬
+下記手順で再作成
 https://www.ritolab.com/entry/19
 
-1�Dec2�C���X�^���X�쐬
-�@�����ɐݒ�Ȃ�
-2�D�Z�L�����e�B�O���[�v�쐬
-�@��rds�ڑ�����ec2�̃Z�L�����e�B�O���[�v�ݒ�ɒ��ӁI1�D�ō쐬�����ۂɐݒ肳�ꂽ�Z�L�����e�B�O���[�v��ݒ肷��
-3�DRDS�쐬
-�@��2�D�ō쐬�����Z�L�����e�B�O���[�v��ݒ�
+1．ec2インスタンス作成
+　→特に設定なし
+2．セキュリティグループ作成
+　→rds接続するec2のセキュリティグループ設定に注意！1．で作成した際に設定されたセキュリティグループを設定する
+3．RDS作成
+　→2．で作成したセキュリティグループを設定
 
 root
 rds_test
 
-��L�菇��ec2��rds��mysql�ڑ�����
-�@��mysql��DB�쐬�B�e�[�u���Ƀf�[�^�����A�擾�܂Ŋ����B
-�@�@�Q�l�Fhttps://qiita.com/knife0125/items/bb095a85d1a5d3c8f706
+上記手順でec2→rdsにmysql接続完了
+　→mysqlでDB作成。テーブルにデータ投入、取得まで完了。
+　　参考：https://qiita.com/knife0125/items/bb095a85d1a5d3c8f706
 
-�Eec2��apache�Aphp�N���Bweb�y�[�W�\��
-�@��apache�Aphp�C���X�g�[���Bphp�ҏW�Aweb�y�[�W�\��ok
-�@�@�Q�l�Fhttps://qiita.com/Arashi/items/629aaed33401b8f2265c
+・ec2でapache、php起動。webページ表示
+　→apache、phpインストール。php編集、webページ表示ok
+　　参考：https://qiita.com/Arashi/items/629aaed33401b8f2265c
 
-�Eelasticache�\�z
-�@��memcached��redis��2��ނ�����Bredis�̕������@�\�ł���A�^���L�x�B�@�@
-�@�@�Q�l�Fhttps://qiita.com/gold-kou/items/966d9a0332f4e110c4f8
+・elasticache構築
+　→memcachedとredisの2種類がある。redisの方が多機能であり、型も豊富。　　
+　　参考：https://qiita.com/gold-kou/items/966d9a0332f4e110c4f8
 
-�@��Redis�쐬�Bec2��redis�C���X�g�[���Acli�ڑ��A���擾�܂Ŋ����B
-�@�@�����g�����������B�B
+　→Redis作成。ec2にredisインストール、cli接続、情報取得まで完了。
+　　無料枠超えたかも。。
 
-�@��ec2��user�ǉ��Bsudo�����t����
+　→ec2にuser追加。sudo権限付けた
 
 test_user
 test_pass
 
 
-�EECS�i�R���e�i�j
-�@�����z�T�[�o�ƈقȂ�A1�R���e�i1�v���Z�X�ŋN������
-�@�@���m�Ȗ����g����������Ȃ��̂ō쐬���Ȃ�
-�@�@�Q�l�Fhttps://qiita.com/uzresk/items/6acc90e80b0a79b961ce
-�@�@�@�@�@http://www.mpon.me/entry/2017/11/19/200000
+・ECS（コンテナ）
+　→仮想サーバと異なり、1コンテナ1プロセスで起動する
+　　明確な無料枠が見当たらないので作成しない
+　　参考：https://qiita.com/uzresk/items/6acc90e80b0a79b961ce
+　　　　　http://www.mpon.me/entry/2017/11/19/200000
 
-�EELB�i���[�h�o�����T�j
-�@�������g�Ȃ������Ȃ̂Ńe�X�g�쐬�͂�߂Ă���
+・ELB（ロードバランサ）
+　→無料枠なさそうなのでテスト作成はやめておく
 
 
-���C���X�^���X��~��Y�ꂸ�ɁI�I
-RDS��7����Ɏ����N������̂ŕs�v�ȏꍇ�͍폜����I
-�ۋ��󋵂̓R�`���Ń`�F�b�N
-��
+☆インスタンス停止を忘れずに！！
+RDSは7日後に自動起動するので不要な場合は削除する！
+課金状況はコチラでチェック
+↓
 https://console.aws.amazon.com/billing/home#/bills?year=2019&month=7
 
-��elastcicache�̃C���X�^���X�^�C�v���f�t�H���g�ō쐬������ۋ������I�I
-�@��0.84 = ��100�~
-
-
+→elastcicacheのインスタンスタイプをデフォルトで作成したら課金発生！！
+　Elastic IPをec2インスタンスにアタッチすると課金される！
+　＄0.99 = 約107円
