@@ -1,55 +1,77 @@
 zabbix
 
-zabbix-agent‚ğ“±“üiWindows”Å‚ğƒCƒ“ƒXƒg[ƒ‹j
-“®ìŠm”FÏBƒf[ƒ^æ“¾‚Ü‚ÅŠm”FB
+zabbix-agentã‚’å°å…¥ï¼ˆWindowsç‰ˆã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ï¼‰
+å‹•ä½œç¢ºèªæ¸ˆã€‚ãƒ‡ãƒ¼ã‚¿å–å¾—ã¾ã§ç¢ºèªã€‚
 
-EZabbix Server‚ğLinux‚É“ü‚ê‚Ä‚İ‚é
-@ec2ƒCƒ“ƒXƒ^ƒ“ƒXì¬¨Š®—¹
-@putty‚à“ü‚ê‚é¨Ú‘±Šm”FÏ
-@MySQL5.5“ü‚ê‚½
-@https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/putty.html?icmpid=docs_ec2_console@
-@https://qiita.com/2no553/items/952dbb8df9a228195189
+ãƒ»Zabbix Serverã‚’Linuxã«å…¥ã‚Œã¦ã¿ã‚‹
+ã€€ec2ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ä½œæˆâ†’å®Œäº†
+ã€€puttyã‚‚å…¥ã‚Œã‚‹â†’æ¥ç¶šç¢ºèªæ¸ˆ
+ã€€MySQL5.5å…¥ã‚ŒãŸ
+ã€€https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/putty.html?icmpid=docs_ec2_consoleã€€
+ã€€https://qiita.com/2no553/items/952dbb8df9a228195189
 
-‰º‹LQl‚É“ü‚ê‚é
-@https://qiita.com/s-katsumata/items/d08cafe98c223ca40c2b
-@https://www.zabbix.com/jp/download?zabbix=4.2&os_distribution=centos&os_version=7&db=mysql
+ä¸‹è¨˜å‚è€ƒã«å…¥ã‚Œã‚‹
+ã€€https://qiita.com/s-katsumata/items/d08cafe98c223ca40c2b
+ã€€https://www.zabbix.com/jp/download?zabbix=4.2&os_distribution=centos&os_version=7&db=mysql
 
 
-ZabbixƒCƒ“ƒXƒg[ƒ‹‚ÉƒGƒ‰[‚É‚È‚é
-systemd‚ª‹N“®‚µ‚Ä‚È‚¢H
-OS‚ª“KØ‚¶‚á‚È‚¢‚©
+Zabbixã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æ™‚ã«ã‚¨ãƒ©ãƒ¼ã«ãªã‚‹
+systemdãŒèµ·å‹•ã—ã¦ãªã„ï¼Ÿ
+OSãŒé©åˆ‡ã˜ã‚ƒãªã„ã‹
 ---------------------------------
 Error: Package: zabbix-server-mysql-4.2.6-1.el7.x86_64 (zabbix)
            Requires: systemd
-`
+ï½
 ---------------------------------
 
-OS•Ï‚¦‚Ä“ü‚ê‚Ä‚İ‚é‚©
-@¨–³—¿—˜—p˜g‚ÌAmazon Linux 2 AMI (HVM), SSD Volume Type - ami-0ff21806645c5e492 (64 ƒrƒbƒg x86) / ami-024b748b625ec022a (64 ƒrƒbƒg Arm)‚ğì¬
-@¨MySQL5.7ƒCƒ“ƒXƒg[ƒ‹
-
-
-l;Grhgdry5f/
-MySQLƒpƒXƒ[ƒh•ÏX
-«
-Zabbix_test2
-
+OSå¤‰ãˆã¦å…¥ã‚Œã¦ã¿ã‚‹ã‹
+ã€€â†’ç„¡æ–™åˆ©ç”¨æ ã®Amazon Linux 2 AMI (HVM), SSD Volume Type - ami-0ff21806645c5e492 (64 ãƒ“ãƒƒãƒˆ x86) / ami-024b748b625ec022a (64 ãƒ“ãƒƒãƒˆ Arm)ã‚’ä½œæˆ
+ã€€â†’MySQL5.7ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 
 ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' 
-/etc/my.cnf‚Ìcharacter_set_server‚ğ’Ç‹L‚µ‚½‚çsocket‚ª“Ç‚ß‚È‚­‚È‚èAmysqlƒƒOƒCƒ“‚ª‚Å‚«‚È‚­‚È‚Á‚½‚Ì‚Åİ’è‚ğ–ß‚µ‚½
+/etc/my.cnfã®character_set_serverã‚’è¿½è¨˜ã—ãŸã‚‰socketãŒèª­ã‚ãªããªã‚Šã€mysqlãƒ­ã‚°ã‚¤ãƒ³ãŒã§ããªããªã£ãŸã®ã§è¨­å®šã‚’æˆ»ã—ãŸ
 
-zabbixƒCƒ“ƒXƒg[ƒ‹
-systemctl start zabbix-server zabbix-agent httpd‚Å‹N“®
+zabbixã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
+systemctl start zabbix-server zabbix-agent httpdã§èµ·å‹•
 
-‰º‹L‚ÅWEBŠÇ—‰æ–Ê‚ÌƒAƒNƒZƒX‚ğ‚İ‚½‚ªÚ‘±‚Å‚«‚¸
+ä¸‹è¨˜ã§WEBç®¡ç†ç”»é¢ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’è©¦ã¿ãŸãŒæ¥ç¶šã§ããš
 
 http://172.31.41.231/zabbix
 http://18.179.112.36/zabbix
 ec2-18-179-112-36.ap-northeast-1.compute.amazonaws.com
 
-zabbix-server‚ª10051ƒ|[ƒg‚Å‚È‚º‚©Listen‚Å‚«‚È‚¢
-«
-zabbix-serverƒCƒ“ƒXƒg[ƒ‹‚Ü‚ÅŠ®—¹‚µ‚½‚½‚ßˆê’UŠ®—¹‚Æ‚·‚é
+zabbix-serverãŒ10051ãƒãƒ¼ãƒˆã§ãªãœã‹Listenã§ããªã„
+â†“
+zabbix-serverã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã¾ã§å®Œäº†ã—ãŸãŸã‚ä¸€æ—¦å®Œäº†ã¨ã™ã‚‹
 
-—]—T‚ª‚ ‚ê‚ÎZabbixŠÇ—‰æ–Ê‚Ì‘€ì‚Ü‚ÅÀs‚µ‚Ä‚İ‚é
+ä½™è£•ãŒã‚ã‚Œã°Zabbixç®¡ç†ç”»é¢ã®æ“ä½œã¾ã§å®Ÿè¡Œã—ã¦ã¿ã‚‹
 https://doruby.jp/users/nakamatsu/entries/CentOS6%E7%92%B0%E5%A2%83%E3%81%ABZabbix%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F
+
+
+æ—¢å­˜ã®ec2ã«Zabbixå…¥ã‚Œã‚ˆã†ã¨ã—ãŸã‚‰ã€ã‚¨ãƒ©ãƒ¼ã«ãªã£ãŸã®ã§
+â†“ã‚’è©¦ã—ã¦ã¿ã‚‹
+https://qiita.com/ktooi/items/1d79db32e1b6082cb93b
+
+http://3.113.24.29/zabbix/
+
+
+MariaDBãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰å¤‰æ›´ï¼ˆå‚è€ƒã«ã—ãŸæ‰‹é †ã®éƒ½åˆä¸ŠMariaDBã§ä½œæˆï¼‰
+â†“
+â—ec2å´
+ãƒ»rootãƒ¦ãƒ¼ã‚¶
+test
+
+ãƒ»zabbixãƒ¦ãƒ¼ã‚¶
+test
+
+zabbix_test
+
+â—rdså´
+root
+rds_test
+
+zabbixã‚µãƒ¼ãƒæ§‹ç¯‰ï¼ˆec2ã€rdsï¼‰å°å…¥ã‚’å®Ÿæ–½ã€‚Zabbixãƒ€ãƒƒã‚·ãƒ¥ãƒœãƒ¼ãƒ‰ç”»é¢è¡¨ç¤ºã¾ã§å®Œäº†ã€‚
+ç›£è¦–å¯¾è±¡ã®ãƒ›ã‚¹ãƒˆç™»éŒ²ã‚„ç›£è¦–é …ç›®ã®è¿½åŠ ã€‚ãƒˆãƒªã‚¬ãƒ¼ã€ã‚¢ã‚¯ã‚·ãƒ§ãƒ³è¿½åŠ ã€‚
+ãƒ­ã‚°ç›£è¦–ã‚’è¿½åŠ ã€‚
+ãƒ»zabbix Dashboard
+ã€€http://3.113.24.29/zabbix/zabbix.php?action=dashboard.view
