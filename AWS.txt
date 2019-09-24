@@ -80,4 +80,5 @@ https://console.aws.amazon.com/billing/home#/bills?year=2019&month=7
 
 →elastcicacheのインスタンスタイプをデフォルトで作成したら課金発生！！
 　Elastic IPをec2インスタンスにアタッチすると課金される！
-　＄0.99 = 約107円
+ →IP外したと思ったが、若干課金額が増加したためec2を全て削除。
+　＄1.05 = 約113円
