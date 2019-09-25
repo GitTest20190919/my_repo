@@ -27,8 +27,11 @@
 　　余裕があれば管理画面で操作するところまで実行する。
 　　mackerelは無料枠があるためアカウントを作成する。
 　　参考：https://www.designet.co.jp/ossinfo/selection/monitoring-server.html
-
-
+  →mackerel
+  　zabbixを使用してみて分かったこと。
+  　　mackerel側のメリット：UIの分かりやすさ、設定が容易、コマンドでの操作も可能。AWSと連携しやすい。
+    　AWSを利用している場合はCloudWatchとの親和性が高い。
+ 
 ・構成管理ツール
 　：ansible、git、jenkins
 　・ansibleインストール
