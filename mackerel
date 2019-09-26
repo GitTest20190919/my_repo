@@ -1,0 +1,22 @@
+■mackerel導入
+
+　・アカウント作成
+ 　→github連携でログイン。2週間無料で機能制限なし。以降は機能制限ありで5ホストのみ登録可能。
+  　https://techblog.forgevision.com/archive/category/Mackerel
+  
+  y.yuzawa@n-cast.co.jp
+  Test-Mackerel-Organization
+  https://mackerel.io/orgs/Test-Mackerel-Organization
+  
+  ・host登録、service、role設定完了。
+  　→ec2インスタンスをhost登録。
+   
+  ・監視項目追加。
+  　→アラートテスト完了。
+   
+  ・通知チャンネル設定
+  　→slackに通知設定。アラート通知テスト完了。
+   　https://techblog.forgevision.com/entry/2018/07/17/162458
+   
+   
+   
