@@ -17,6 +17,12 @@
   ・通知チャンネル設定
   　→slackに通知設定。アラート通知テスト完了。
    　https://techblog.forgevision.com/entry/2018/07/17/162458
+    
+  ・plug-in導入完了。
+  　→アラートテスト完了。
+   　カスタムメトリック設定中。グラフ表示がされないので要調査。
+    https://mackerel.io/ja/docs/entry/advanced/custom-metrics
+    https://xp-cloud.jp/blog/2017/09/04/1916/
    
    
    
