@@ -23,6 +23,10 @@
    　カスタムメトリック設定中。グラフ表示がされないので要調査。
     https://mackerel.io/ja/docs/entry/advanced/custom-metrics
     https://xp-cloud.jp/blog/2017/09/04/1916/
+    →ruby、pythonやシェルで設定ファイルを作成したがグラフが表示されない原因は不明。
+    　OSのバージョン違いか。mackerel-agentログが出力されない原因も特定できず。
+     
+     基本的な操作、設定は完了。
    
    
    
