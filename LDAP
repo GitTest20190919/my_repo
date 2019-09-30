@@ -7,3 +7,6 @@
  
 　・OpenLdapサーバ管理者パスワード設定
  　→pass：manager
+
+　・Ldapユーザの設定
+ 　→uid：user01
