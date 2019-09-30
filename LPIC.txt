@@ -40,7 +40,9 @@ https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/putty.html?icmpid=docs
 
 ・タイムゾーン変更
 　→テスト用に作成したec2インスタンスi-022ff50c660f69695のタイムゾーンをUTC→JSTに変更
-　　参考：https://qiita.com/azusanakano/items/b39bd22504313884a7c3
+ 　・UTC→JST設定変更用シェル
+ 　　→格納先github：https://github.com/GitTest20190919/my_repo/blob/master/TimeZoneChange.sh
+　　　参考：https://qiita.com/azusanakano/items/b39bd22504313884a7c3
 
 ・ec2→ec2にsshログイン（踏み台から接続先ホストに接続）
 　→デフォルトだと「Permission denied (publickey,gssapi-keyex,gssapi-with-mic)」権限無し。
@@ -48,9 +50,9 @@ https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/putty.html?icmpid=docs
 　　※事前に、ssh-keygenコマンドで「id_rsa、id_rsa.pub」ファイルを生成しておく
 　　参考：https://qiita.com/kenju/items/b09199c4b3e7203a2867
 
-
 ・LPICの無料問題集サイトで学習
 　→正答率はまだ50%程度。飽きてくるので効率があまりよくない。
 　　他の方法を考える。
 　　参考：https://ping-t.com/mondai3/mondais/mbunya
+  
 
