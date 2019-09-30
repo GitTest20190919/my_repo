@@ -1,0 +1,9 @@
+■LDAPサーバ構築
+　ユーザのアクセス権限を一括管理する
+
+　・LDAPインストール
+ 　→ec2インスタンスにopenldapをインストール
+  参考：https://www.tanchallenge-glory40.com/ldap1/
+ 
+　・OpenLdapサーバ管理者パスワード設定
+ 　→pass：manager
