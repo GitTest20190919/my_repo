@@ -1,0 +1,25 @@
+■構築作業概要
+
+　参考：https://thinkit.co.jp/article/12056
+ 
+・構築作業の流れ
+　→設計書を基やパラメータシートを基にハードウェアやソフトウェアの設定を行う
+　 ハードウェア設定、OSインストール、ミドルウェア等をインストール
+
+・構築の環境
+　→まずは検証環境等で構築し、テストを行う
+ 　検証環境で手順等を含めて問題ない事を確認したら、構築手順書を作成
+  
+・構築作業の自動化
+　→Ansible等のツールで構築作業を自動化する
+ 　参考：https://employment.en-japan.com/engineerhub/entry/2019/04/12/103000
+ 
+・構築後のテスト
+　→Infrataster、Serverspec等のツールを利用してテストを行う
+ 　参考：https://knowledge.sakura.ad.jp/3082/
+  　　　https://knowledge.sakura.ad.jp/2596/
+
+
+ 
+
+ 
