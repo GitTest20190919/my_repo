@@ -113,9 +113,13 @@ test_pass
    https://read.amazon.co.jp/
  
 ・WEB問題集
-　→会員登録が必要（有料 3000円くらい？）
+　→会員登録が必要（有料 ゴールド〜ダイヤモンドまであり、¥3800〜¥5500くらいで結構高く、期限が90日と制限がある）
  　https://aws.koiwaclub.com/exam/
- 
+  
+  yuzawa
+  y.yuzawa@n-cast.co.jp
+  all-cast3190
+    
 ・必要な物
 　→身分証が2つ（写真付き、無し）
 　 AWS公式BlackBeltでも記載があるので、写真付き身分証はマイナンバーカードでも良さそう。
