@@ -71,7 +71,39 @@ test_pass
 ・ELB（ロードバランサ）
 　→無料枠なさそうなのでテスト作成はやめておく
 
+・SWF（Simple Workflow Service）
+　→複数サーバでバッチ処理等の自動処理を行う際に、その順番や振り分け先を管理する。
+ 　参考：https://dev.classmethod.jp/cloud/aws/cm-advent-calendar-2015-getting-started-again-swf/
 
+・DynamoDB
+　→容量制限がないNoSQL型のDB
+ 　参考：https://qiita.com/walkers/items/9b39d752cc5b8df7b4b5
+  
+ ・Route53
+ 　→DNSサーバを作成できるサービス
+  　参考：http://fujiike.hateblo.jp/entry/2015/09/14/191934
+   　 　　https://qiita.com/PharaohKJ/items/b6a933b7f79afe8a32e1
+
+・Cloudfomation
+　→インフラ構築時のデプロイ作業等を自動化できる
+ 　参考：https://dev.classmethod.jp/cloud/aws/cloudformation-beginner01/
+  
+・Elastic Beanstalk
+　→
+ 　参考：https://qiita.com/DeployCat/items/f9f0c03080d9cf6c3cc6
+
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+■AWS資格
+
+・AWS 認定ソリューションアーキテクト – アソシエイト
+ 　https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/
+
+・AWS 認定クラウドプラクティショナー
+ 　https://aws.amazon.com/jp/certification/certified-cloud-practitioner/
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ☆インスタンス停止を忘れずに！！
 RDSは7日後に自動起動するので不要な場合は削除する！
 課金状況はコチラでチェック
@@ -82,3 +114,4 @@ https://console.aws.amazon.com/billing/home#/bills?year=2019&month=7
 　Elastic IPをec2インスタンスにアタッチすると課金される！
  →IP外したと思ったが、若干課金額が増加したためec2を全て削除。
 　＄1.05 = 約113円
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
