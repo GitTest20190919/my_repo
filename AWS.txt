@@ -106,6 +106,10 @@ test_pass
 ・イベントサブスクリプション
 　→RDSイベントをメール通知。受信確認。
  
+・lambda
+　→サーバ無しにプログラム実行ができる。
+ 　無料枠があるか使用量に注意！
+ 　参考：https://dev.classmethod.jp/cloud/aws/lambda-my-first-step/
  
 
 
