@@ -84,12 +84,13 @@ fujistu製はマニュアルが豊富にあるので事前に調べておく
 
 ・ESXi
 　→OSが不要でハードウエアにインストールして動かせる独立したハイパーバイザ
-
+ 　
 ・vCenter Server
 　→ESXiサーバーを管理するためのソフトウェア
 
 ・Eternus DX200
 　→HDDとSSDを格納することが可能なハイブリッドストレージ
+　※参考リンク：https://www.fujitsu.com/jp/products/computing/storage/disk/eternus-dx/dx200/
 
 ・Brocade
 　→SAN（Storage Area Network）の中心を担う装置としてサーバ・ストレージ間を中継する
