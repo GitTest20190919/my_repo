@@ -22,7 +22,7 @@ fujistu製はマニュアルが豊富にあるので事前に調べておく
 ・Brocade SW×2
 
 
-本番・西のソフトウェアを中心に覚えておいて欲しい
+本番西のソフトウェアを中心に覚えておいて欲しい
 ・System Cast Wizard
 　→何かのバックアップ
 
@@ -42,12 +42,46 @@ fujistu製はマニュアルが豊富にあるので事前に調べておく
 ■方針
 　・基本設計
 　・実装設計（詳細と基本の中間）
-　・詳細（パラメータシート）
+　・詳細設計（パラメータシート）
 　・テスト仕様書
 
 
 
-------------------------
+
+------------------------------------------------
+■事前に調べておく
+
+・System Cast Wizard　
+　→イメージバックアップ（システムを丸ごとバックアップ）のソフトウェア
+　　物理環境、仮想環境のバックアップ、故障時の復旧処理時間の短縮、
+　　機種・OS等の環境に依存しない同一操作で一元管理が可能
+　　※参考URL：https://www.fujitsu.com/jp/products/software/infrastructure-software/infrastructure-software/scw/function/
+
+・Advanced Copy Manager（MMC）
+　→高速バックアップ、レプリケーションを提供するソフトウェア
+　　EternusのDisktoDiskコピー
+　　※参考URL：https://www.fujitsu.com/jp/products/computing/storage/software/sf-acm/
+
+・Server View Operation Manager
+　→安定稼動を支援するシステム統合管理ツール群。
+　　システムの常時監視、エラー検出の自動化。
+　　※参考URL：https://jp.fujitsu.com/platform/server/primergy/svs/
+
+・Storage Cruiser
+　→サーバでボリュームを利用するために必要な操作
+　　(ボリューム作成、サーバへの割り当て、バックアップ・リストア）を一つの画面で管理する。
+　　※参考URL：https://www.fujitsu.com/jp/products/computing/storage/software/sf-sc/
+
+・Arcserver Backup
+　→LinuxのSystem領域のバックアップ
+
+・Windows標準のバックアップ
+　→Windows×2 Serverのシステム領域のバックアップ
+
+
+
+■その他
+
 ・ESXi
 　→OSが不要でハードウエアにインストールして動かせる独立したハイパーバイザ
 
@@ -60,6 +94,5 @@ fujistu製はマニュアルが豊富にあるので事前に調べておく
 ・Brocade
 　→SAN（Storage Area Network）の中心を担う装置としてサーバ・ストレージ間を中継する
 
-
-------------------------
+------------------------------------------------
 
