@@ -18,7 +18,6 @@ fujistu製はマニュアルが豊富にあるので事前に調べておく
 最初は検証東環境から
 　→ストレージの設計
 ・Eternus DX200
-
 ・Brocade SW×2
 
 
@@ -74,6 +73,8 @@ fujistu製はマニュアルが豊富にあるので事前に調べておく
 
 ・Arcserver Backup
 　→LinuxのSystem領域のバックアップ
+  https://www.fujitsu.com/jp/products/software/partners/partners/arcserve/products/backup/
+ 
 
 ・Windows標準のバックアップ
 　→Windows×2 Serverのシステム領域のバックアップ
