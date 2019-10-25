@@ -73,9 +73,9 @@ fujistu製はマニュアルが豊富にあるので事前に調べておく
 
 ・Arcserver Backup
 　→LinuxのSystem領域のバックアップ
-  https://www.fujitsu.com/jp/products/software/partners/partners/arcserve/products/backup/
+ 　Linuxサーバのリモートバックアップ・リストア。
+  　※参考URL：https://www.fujitsu.com/jp/products/software/partners/partners/arcserve/products/backup/
  
-
 ・Windows標準のバックアップ
 　→Windows×2 Serverのシステム領域のバックアップ
 
