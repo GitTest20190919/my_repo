@@ -2,7 +2,7 @@ AWS
 
 アカウントは個人のメールアドレスで作成
 crystal0@tj9.so-net.ne.jp
-Crystal0tj9
+　⇨アカウント削除
 
 ■マネジメントコンソール
 https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fap-northeast-1.console.aws.amazon.com%2Fconsole%2Fhome%3Fregion%3Dap-northeast-1%26state%3DhashArgs%2523%26isauthcode%3Dtrue&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fhomepage&forceMobileApp=0
